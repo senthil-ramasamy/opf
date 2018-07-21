@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/slicebox.css">
         <link rel="stylesheet" href="css/colorbox.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
 
         <title>One People Festival</title>
     </head>
@@ -21,10 +22,10 @@
                     <div class="header">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-4 col-xs-12">
                                     <a class="logo"><img src="images/logo.png" /></a>                                
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-8 col-sm-8 col-xs-12">
                                     <div class="event_name text-right">
                                         <!--<span><i class="fa fa-font-awesome" aria-hidden="true"></i> Event</span>-->
                                         <span><i class="fa fa-map-signs" aria-hidden="true"></i> EC41.</span>
@@ -55,7 +56,7 @@
                     </div>
                     <div class="content">
                         <h2>One People Festival</h2>
-                        <p style="font-size: 19px">The One People Festival is an idea and a revolution of music , art , food trucks , Creative installations and camping by the ever famous coast of Chennai .It represents itself as a unified platform for the music & arts community in collaboration with local vendors and businesses</p>
+                        <p class="p_class">The One People Festival is an idea and a revolution of music , art , food trucks , Creative installations and camping by the ever famous coast of Chennai .It represents itself as a unified platform for the music & arts community in collaboration with local vendors and businesses</p>
 
                         <a href="http://imojo.in/OnePeopleFestival" target="_blank" class="button">Buy Ticket</a>
                     </div>
@@ -163,8 +164,8 @@
                 <div class="container">
                     <div class="text-center"><h3 class="heading"><span>sounds</span></h3></div>
                     <div class="row">
-                         <div class="col-md-12 pad-bo20">
-                            <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/565930671&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        <div class="col-md-12 pad-bo20">
+                            <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/565930671&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                         </div> 
                     </div>
                 </div>
@@ -308,7 +309,7 @@
                     document.getElementById("timer_day").innerHTML = ("00" + days).slice(-2);
                     document.getElementById("timer_hours").innerHTML = ("00" + hours).slice(-2);
                     document.getElementById("timer_minutes").innerHTML = ("00" + minutes).slice(-2);
-                    document.getElementById("timer_seconds").innerHTML = ("00" + seconds).slice(-2);
+                    //document.getElementById("timer_seconds").innerHTML = ("00" + seconds).slice(-2);
                     // If the count down is finished, write some text 
                     if (distance < 0) {
                         clearInterval(x);
@@ -316,11 +317,10 @@
                         document.getElementById("timer_day").innerHTML = "00";
                         document.getElementById("timer_hours").innerHTML = "00";
                         document.getElementById("timer_minutes").innerHTML = "00";
-                        document.getElementById("timer_seconds").innerHTML = "00";
+                        //document.getElementById("timer_seconds").innerHTML = "00";
                     }
                 }, 1000);
-            </script>
-            <script>
+
                 $(function () {
                     $(".flip").flip({
                         trigger: 'hover'

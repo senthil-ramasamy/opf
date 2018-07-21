@@ -504,3 +504,11 @@ strong, b {
 .he{
     text-align: center;
 }
+.banner .button{
+    border-width: 4px;
+    font-size: 20px;
+    padding: 10px 30px; 
+}
+.p_class{
+    font-size: 19px;
+}
