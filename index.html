@@ -14,13 +14,6 @@
         <title>One People Festival</title>
     </head>
     <body>
-        <?php
-        $msg = "";
-
-        include 'PHPMailer.php';
-        include 'SMTP.php';
-        include 'mail.php';
-        ?>
         <div class="site">
             <div class="banner">
                 <div class="banner_img">
@@ -247,11 +240,6 @@
                                     <div class="text-center">
                                         <input type="submit" class="button">
                                     </div>
-                                    <?php if ($msg != "") { ?>
-                                        <div class="frmMsg">
-                                            <?php echo $msg; ?>
-                                        </div>
-                                    <?php } ?>
                                 </form>
                                 <div class="contact_nt">
                                     <span><i class="fa fa-home"></i> Address</span>
