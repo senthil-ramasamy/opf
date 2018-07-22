@@ -122,6 +122,18 @@
         display: block;
         padding: 20px 0;
     }
+    .flip {
+        height: 300px;
+    }
+    .mob-none {
+        display: none;
+    }
+    .mob-blck {
+        display: block;
+    }
+    .mbot0 {
+        margin-bottom: 0;
+    }
 }
 @media (max-width:420px) {
     .abs_img{

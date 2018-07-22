@@ -512,3 +512,6 @@ strong, b {
 .p_class{
     font-size: 19px;
 }
+.mob-blck {
+    display: none;
+}
